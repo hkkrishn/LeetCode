@@ -1,0 +1,13 @@
+//Trees are structs that are hierachical in nature
+//Trees can have zero or more child nodes
+//Every Tree has one root node and every node descends from one node
+
+//The DOM is a tree structure ( Document Object Model)
+// Decisions are also based on tree data structure.
+//The Abstract Syntax tree uses a tree data structure
+
+//Nodes can contain any information that we want
+
+//Linked Lists are the basis of trees.
+
+

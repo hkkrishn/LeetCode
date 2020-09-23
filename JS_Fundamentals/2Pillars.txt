@@ -1,0 +1,77 @@
+
+
+The two pillars-->{
+    Closures and Prototypal Inheritance
+}
+
+Objects = Array[]
+Object = Functions()
+
+When we invoke a function we get two parameters automatically
+-this keyword and the arguments keyword
+arguments is an array like object that has weird behaviours when we loop over it
+so we use the ...spread operator
+
+const one = ()=>{
+    return 1;
+}
+
+one() --> invoke
+
+Functions can also me a method, which is a function inside of an object
+const obj = {
+    two(){
+        return 2;
+    }
+}
+
+obj.two()  --> invoke, the this keyword is updated to obj instead of window
+
+const three = ()=>{
+    return 3;
+}
+
+three.call()---> invoke function using the function object call method
+
+const four = new Function(' num','return num')
+four(4) --> invoke returns 4
+this is a function constructor and takes in the two args and builds a function.
+
+Functions are a special type of object that is a callable object
+e.g
+
+const woohoo = ()=>{
+    console.log('woohoo')
+}
+
+woohoo.yell = 'ahhh'
+
+Under the hood in psuedo code this is ocurring
+const specialObj = {
+    yell:'ahhh',
+    name:'woohoo',
+    ():console.log('woohooo')
+}
+
+
+somefunc() is an object with some special properties
+Code() which is defined by the brackets when executed it reads whats in the brackets and executes it
+Name(optional), we can anonymous functions in this case it would be somefunc()
+Properties such as .call(),.apply(),.bind()
+
+this explains
+woohoo.call() etc
+
+Objects do not have these special properties
+
+const obj = {
+
+}
+
+However, since functions are objects we can pass them around and treat them similar to
+objects or data, store them, manipulate them, etc and pass them as args into other functions
+
+
+
+
+
