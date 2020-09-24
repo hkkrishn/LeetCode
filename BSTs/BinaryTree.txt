@@ -1,0 +1,37 @@
+A Binary Tree
+
+Each Node can only have 0,1 or 2 nodes
+Each child can only have one parent
+Each Node represents a certain state
+
+Binary tree creation
+
+const BinaryTreeNode(val)=>{
+    this.value = value;
+    this.left = null;
+    this.right = null;
+}
+
+Perfect/Balanced Binary Trees are desirable
+the number of total nodes at each level doubles as we go to the next layer
+The number of nodes on the last level =
+Sum(all the nodes) +1
+
+Half of the nodes are the on the last level
+
+O(log N)
+
+A Special Characteristic or property of binary tree
+
+Level:0 2^level = 1
+level 1 : 2^1 = 2
+level 2: 2^2 = 4
+level 3 : 2^ 3 = 8
+
+# of nodes in a tree  = 2^h -1
+log(nodes) = height
+
+O(log(N))
+
+
+

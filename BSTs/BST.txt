@@ -1,0 +1,28 @@
+Binary Search Trees
+lookup O(logN)
+insert O(log N)
+delete O (log N)
+
+They are great for comparing things
+This data structure preserves relationships
+
+BST rules
+1. All child nodes to the right of the root node must be greater than the current node
+2. All child Nodes to the left of the root must be less than the current node
+3. A Node can only have upto two children
+
+
+Balanced vs UnBalanced Search Trees
+
+Ideally we want to balance our search Trees
+
+
+BST Pros and CONS
+Pros
+Better than O(n)
+Ordered - we have sorted hierachical data
+Flexible Size
+
+Cons
+No O(1) operations
+
